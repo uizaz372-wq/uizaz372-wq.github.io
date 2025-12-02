@@ -13,7 +13,7 @@
         /* Header */
         header { background: #4CAF50; color: white; text-align: center; padding: 50px 20px; }
         header h1 { font-size: 2.5em; margin: 0; }
-        header p { font-size: 1.2em; margin-top: 10px; }
+        header p { font-size: 1.1em; margin-top: 10px; line-height: 1.5; }
 
         /* Sections */
         section { max-width: 800px; margin: 20px auto; background: white; padding: 25px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
@@ -23,10 +23,18 @@
         ul { list-style-type: none; padding: 0; }
         li { margin-bottom: 10px; font-size: 1.1em; }
 
-        /* Contact Form */
-        form input, form textarea { width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ccc; }
-        form button { background: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
-        form button:hover { background: #45a049; }
+        /* Contact Button */
+        .contact-button {
+            display: inline-block; 
+            background:#4CAF50; 
+            color:white; 
+            padding:12px 25px; 
+            border-radius:5px; 
+            text-decoration:none; 
+            font-weight:bold; 
+            margin-top:10px;
+        }
+        .contact-button:hover { background:#45a049; }
 
         /* Footer */
         footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 20px; }
@@ -37,7 +45,9 @@
     <!-- Header -->
     <header>
         <h1>Hello, I'm Izaz Ullah</h1>
-        <p>CS50 Graduate | Python Developer | Web Development | Automation & Web Scraping</p>
+        <p>CS50 Graduate | Python & Web Development | Automation & Web Scraping<br>
+           Passionate about building projects that solve real-world problems.<br>
+           Available for freelance tasks and collaborative projects.</p>
     </header>
 
     <!-- Projects Section -->
@@ -53,22 +63,12 @@
     <!-- Contact Section -->
     <section>
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:uizaz372@gmail.com">uizaz372@gmail.com</a></p>
-
-        <!-- Modern Contact Form -->
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
+        <p>If you want to contact me, just click the button below:</p>
+        <a href="mailto:uizaz372@gmail.com?subject=Contact%20from%20Portfolio&body=Hello%20Izaz%2C%0A%0A"
+           class="contact-button">Send me an Email</a>
     </section>
 
     <!-- Footer -->
     <footer>
         <p>“Coding is not just writing programs, it’s solving real-world problems.”</p>
-    </footer>
-
-</body>
-</html>
 
