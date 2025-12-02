@@ -5,18 +5,88 @@
     <title>Izaz Ullah | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f0f2f5; color: #333; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f2f5;
+            color: #333;
+        }
         a { text-decoration: none; color: #4CAF50; }
         a:hover { text-decoration: underline; }
-        header { background: #4CAF50; color: white; text-align: center; padding: 50px 20px; }
+
+        header {
+            background: linear-gradient(135deg, #4CAF50, #81C784);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
         header h1 { font-size: 2.5em; margin: 0; }
         header p { font-size: 1.1em; margin-top: 10px; line-height: 1.5; }
-        section { max-width: 800px; margin: 20px auto; background: white; padding: 25px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
-        h2 { color: #4CAF50; margin-bottom: 15px; border-bottom: 2px solid #4CAF50; padding-bottom: 5px; }
+
+        section {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+
         ul { list-style-type: none; padding: 0; }
         li { margin-bottom: 10px; font-size: 1.1em; }
+
+        /* Skills badges */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-badge {
+            background: #4CAF50;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .skill-badge:hover { background: #388E3C; }
+
         .manual-email { font-weight: bold; color: #4CAF50; font-size: 1.1em; }
-        footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 20px; }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* Projects cards */
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .project-card {
+            flex: 1;
+            min-width: 250px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+        }
     </style>
 </head>
 <body>
@@ -32,23 +102,31 @@
     <!-- Projects Section -->
     <section>
         <h2>My GitHub Projects</h2>
-        <ul>
-            <li><a href="https://github.com/uizaz372-wq/Filter-CS50" target="_blank">Filter (CS50 Problem Set)</a></li>
-            <li><a href="https://github.com/uizaz372-wq/Volume-CS50" target="_blank">Volume (CS50 Problem Set)</a></li>
-            <li><a href="https://github.com/uizaz372-wq/Readability-CS50" target="_blank">Readability Checker (CS50 Problem Set)</a></li>
-        </ul>
+        <div class="projects">
+            <div class="project-card">
+                <p><a href="https://github.com/uizaz372-wq/Filter-CS50" target="_blank">Filter (CS50)</a></p>
+            </div>
+            <div class="project-card">
+                <p><a href="https://github.com/uizaz372-wq/Volume-CS50" target="_blank">Volume (CS50)</a></p>
+            </div>
+            <div class="project-card">
+                <p><a href="https://github.com/uizaz372-wq/Readability-CS50" target="_blank">Readability Checker (CS50)</a></p>
+            </div>
+        </div>
     </section>
 
     <!-- Skills Section -->
     <section>
         <h2>Skills</h2>
-        <ul>
-            <li>Python (Web, Automation, Web Scraping)</li>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Git & GitHub</li>
-            <li>CS50 Problem Sets</li>
-            <li>Basic Web Development Projects</li>
-        </ul>
+        <div class="skills">
+            <span class="skill-badge">Python (Web, Automation, Web Scraping)</span>
+            <span class="skill-badge">HTML</span>
+            <span class="skill-badge">CSS</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">Git & GitHub</span>
+            <span class="skill-badge">CS50 Problem Sets</span>
+            <span class="skill-badge">Web Development Projects</span>
+        </div>
     </section>
 
     <!-- Contact Section -->
@@ -56,7 +134,7 @@
         <h2>Contact Me</h2>
         <p>If you want to contact me, please use the email below:</p>
         <p class="manual-email">uizaz372@gmail.com</p>
-        <p>Or message me directly on WhatsApp (click below):</p>
+        <p>Or message me directly on WhatsApp:</p>
         <p><a href="https://wa.me/923348337837" target="_blank">Message me on WhatsApp</a></p>
         <p>Copy email or click WhatsApp link to reach me.</p>
     </section>
