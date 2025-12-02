@@ -5,28 +5,42 @@
     <title>Izaz Ullah | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        /* General Styles */
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f0f2f5; color: #333; }
+        a { text-decoration: none; color: #4CAF50; }
+        a:hover { text-decoration: underline; }
+
+        /* Header */
         header { background: #4CAF50; color: white; text-align: center; padding: 50px 20px; }
         header h1 { font-size: 2.5em; margin: 0; }
         header p { font-size: 1.2em; margin-top: 10px; }
 
+        /* Sections */
         section { max-width: 800px; margin: 20px auto; background: white; padding: 25px; border-radius: 10px; box-shadow: 0 3px 10px rgba(0,0,0,0.1); }
-
         h2 { color: #4CAF50; margin-bottom: 15px; border-bottom: 2px solid #4CAF50; padding-bottom: 5px; }
+
+        /* Project List */
         ul { list-style-type: none; padding: 0; }
         li { margin-bottom: 10px; font-size: 1.1em; }
-        a { color: #4CAF50; text-decoration: none; }
-        a:hover { text-decoration: underline; }
 
+        /* Contact Form */
+        form input, form textarea { width: 100%; padding: 10px; margin-bottom: 10px; border-radius: 5px; border: 1px solid #ccc; }
+        form button { background: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+        form button:hover { background: #45a049; }
+
+        /* Footer */
         footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 20px; }
     </style>
 </head>
 <body>
+
+    <!-- Header -->
     <header>
         <h1>Hello, I'm Izaz Ullah</h1>
         <p>CS50 Graduate | Python Developer | Web Development | Automation & Web Scraping</p>
     </header>
 
+    <!-- Projects Section -->
     <section>
         <h2>My GitHub Projects</h2>
         <ul>
@@ -36,13 +50,25 @@
         </ul>
     </section>
 
+    <!-- Contact Section -->
     <section>
         <h2>Contact Me</h2>
         <p>Email: <a href="mailto:uizaz372@gmail.com">uizaz372@gmail.com</a></p>
+
+        <!-- Modern Contact Form -->
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
+    <!-- Footer -->
     <footer>
         <p>“Coding is not just writing programs, it’s solving real-world problems.”</p>
     </footer>
+
 </body>
 </html>
+
